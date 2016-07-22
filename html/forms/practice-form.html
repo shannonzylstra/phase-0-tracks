@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Order Tickets to Rock This Country</title>
+	</head>
+	<body>
+		<form name="rock-this-country-tour" action="success.html" method="post">
+
+			<fieldset>
+				<div>
+					<label>Concert date: </label>
+					<input type="date" name="date">
+				</div>
+			</fieldset>
+
+			<fieldset>
+		    	<div>
+		      <label>Section:</label>
+		      <select name="section-selection">
+		      	<option value="section">Nosebleeds (300+)</option>
+		      	<option value="section">Club</option>
+		      	<option value="section">Floor</option>
+		      	<option value="section">VIP</option>
+		      </select>
+		    	</div>
+	    	</fieldset>	
+
+		    <fieldset>
+		    	<div>
+		    		<label>Name on tickets:</label>
+		    		<input type="text" name="name">
+	    		</div>
+		    </fieldset>
+
+		    <fieldset>
+		    	<legend> Song Requests </legend>
+		    	<p>
+		    		<label>
+		    			<input type="checkbox" name="song" value="impress">
+		    			" Don't Impress Me Much "
+		    		</label>
+	    		</p>
+	    		<p>
+	    			<label>
+	    				<input type="checkbox" name="song" value="woman">
+	    				" Man I Feel Like a Woman "
+	    			</label>
+				</p>
+				<P>
+					<label>
+						<input type="checkbox" name="song" value="still">
+						" Still the One "
+					</label>
+				</p>
+		    </fieldset>
+
+			<fieldset>
+				<legend> Ticketholder Age </legend>
+				<p>
+					<label>
+						<input type="radio" name="age" value="minor">
+						" Under 18 "
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="age" value="18-20">
+						" 18-20 "
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="age" value="21">
+						" 21+ "
+					</label>
+				</p>
+			</fieldset>
+
+		  <button type="submit">Order tickets</button>
+		</form>
+	</body>
+</html>
