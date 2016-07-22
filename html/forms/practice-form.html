@@ -1,50 +1,84 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Order Tickets to Rock This Country</title>
+	</head>
 	<body>
-		<form name="adventure" action="https:/httpbin.org/post" method="post">
-		  <fieldset>
-		    <div>
-		      <label>Full name:</label>
-		      <input type="text" name="fullname">
-		    </div>
+		<form name="rock-this-country-tour" action="success.html" method="post">
 
-		    <div>
-		      <label>Email:</label>
-		      <input type="email" name="email">
-		    </div>
+			<fieldset>
+				<div>
+					<label>Concert date: </label>
+					<input type="date" name="date">
+				</div>
+			</fieldset>
 
-		    <div>
-		      <label>Password:</label>
-		      <input type="password" name="password">
-		    </div>
-		  </fieldset>
-
-		  <fieldset>
-		    <div>
-		      <label>Adventure name:</label>
-		      <input type="text" name="adv-name" placeholder="Name this adventure">
-		    </div>
-
-		    <div>
-		      <label>Type of bicycle:</label>
-		      <select name="bike">
-		        <option value="road">Road</option>
-		        <option value="road">Mountain</option>
-		        <option value="road">Cyclocross</option>
+			<fieldset>
+		    	<div>
+		      <label>Section:</label>
+		      <select name="section-selection">
+		      	<option value="section">Nosebleeds (300+)</option>
+		      	<option value="section">Club</option>
+		      	<option value="section">Floor</option>
+		      	<option value="section">VIP</option>
 		      </select>
-		    </div>
+		    	</div>
+	    	</fieldset>	
 
-		    <div>    
-		      <label>Choose a date:</label>
-		      <input type="date" name="date">
-		    </div>
+		    <fieldset>
+		    	<div>
+		    		<label>Name on tickets:</label>
+		    		<input type="text" name="name">
+	    		</div>
+		    </fieldset>
 
-		    <div>
-		      <input type="checkbox" name="cb-agree" value="agree">
-		      I am prepared to lead this adventure.
-		    </div>
-		  </fieldset>
-		  
-		  <button type="submit">Save this adventure</button>
+		    <fieldset>
+		    	<legend> Song Requests </legend>
+		    	<p>
+		    		<label>
+		    			<input type="checkbox" name="song" value="impress">
+		    			" Don't Impress Me Much "
+		    		</label>
+	    		</p>
+	    		<p>
+	    			<label>
+	    				<input type="checkbox" name="song" value="woman">
+	    				" Man I Feel Like a Woman "
+	    			</label>
+				</p>
+				<P>
+					<label>
+						<input type="checkbox" name="song" value="still">
+						" Still the One "
+					</label>
+				</p>
+		    </fieldset>
+
+			<fieldset>
+				<legend> Ticketholder Age </legend>
+				<p>
+					<label>
+						<input type="radio" name="age" value="minor">
+						" Under 18 "
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="age" value="18-20">
+						" 18-20 "
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="age" value="21">
+						" 21+ "
+					</label>
+				</p>
+			</fieldset>
+
+		  <button type="submit">Order tickets</button>
 		</form>
 	</body>
 </html>
