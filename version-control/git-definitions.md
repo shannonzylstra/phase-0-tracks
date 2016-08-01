@@ -1,10 +1,14 @@
 # Git Definitions
 
-**Instructions: ** Define each of the following Git concepts.
+**Instructions:** Define each of the following Git concepts.
 
-* What is version control?  Why is it useful?
-* What is a branch and why would you use one?
-* What is a commit? What makes a good commit message?
-* What is a merge conflict?
+* **Version control** is ... ; it is useful because ...
+* A **branch** is ; you use one ... 
+* A **commit** is ; a good commit message is ... 
+* A **merge conflict** is ... 
 
-*To do.*
+![Git Commit](images/git_commit.png)
+
+*XKCD:* *[http://imgs.xkcd.com/comics/git_commit.png]()*
+
+
